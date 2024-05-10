@@ -1,3 +1,5 @@
+# data_loader.py
+
 import torch
 import torchvision.transforms as transforms
 from torchvision.datasets import ImageFolder

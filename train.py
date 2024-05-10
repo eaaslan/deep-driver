@@ -24,5 +24,8 @@ def train_model():
             running_loss += loss.item()
         print(f'Epoch {epoch+1}, Loss: {running_loss/len(train_loader)}')
 
+    # Save the trained model
+    torch.save(model.state_dict(), 'drowsiness_detector.pth')
+
 if __name__ == "__main__":
     train_model()
