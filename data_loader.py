@@ -5,7 +5,7 @@ import torchvision.transforms as transforms
 from torchvision.datasets import ImageFolder
 from torch.utils.data import DataLoader
 
-def load_data(data_dir='./ddd'):
+def load_data(data_dir='./archive/Driver Drowsiness Dataset (DDD)'):
     transformations = transforms.Compose([
         transforms.Resize((128, 128)),  # Resize all images to 128x128
         transforms.ToTensor(),          # Convert images to tensor
